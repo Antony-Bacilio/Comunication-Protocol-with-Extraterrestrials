@@ -187,30 +187,3 @@ let courant = ref v_lettres_uplet.(0) in
 Printf.printf "\n\n\t====================================================\n";;
 Printf.printf "\n\t\tFIN DE COMMUNICATION DE BASE\n";;
 Printf.printf "\n\t====================================================\n\n";;
-
-(*for i=0 to taille_msg-1 do
-  let j = ref 0 in
-    while !j<=26 do (
-      let (l,n1,n2)= v_lettres_uplet.(!j) in
-        if v_message.(i) == l then ( 
-          if (n1<n2) then (
-            let cmds = create_l_cmd n1 'N' in
-              print_string "\n\n";
-              print_liste_char cmds; 
-              print_string "\n\n- Temps d'éxecution : "; 
-              print_int (somme_liste (List.map cal_tmp cmds));
-          )
-          else (
-            let cmds  = create_l_cmd n2 'P' in
-              print_string "\n\n";
-              print_liste_char cmds;
-              print_string "\n\n- Temps d'éxecution : "; 
-              print_int (somme_liste (List.map cal_tmp cmds));
-          );
-          j := !j;
-        );
-      j := !j+1;
-    )
-    done;
-done;
-;;*)
